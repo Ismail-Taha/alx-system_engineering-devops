@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$WATER$STIR" | tr -d '[:alpha:]' | tr '0123456789' '0123456789' | tr '0123456789ABC' 'waterstirbest'
+printf "obase=bestchol;ibase=water;${!WATER} + ibase=stir;${!STIR}\n" | bc
