@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Displaye numbers from 1 to 100.
+# fizzbuzz algorithm.
+
+for num in {1..100}
+do
+	if ((num%15==0))
+	then
+		echo "FizzBuzz"
+	elif ((num%3==0))
+	then
+		echo "Fizz"
+	elif ((num%5==0))
+	then
+		echo "Buzz"
+	else
+		echo "$num"
+	fi
+done
