@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Displays listening ports. Includes listening sockets as well
+# + show the PID and name of the program to which each socket belongs.
+# use <apt install net-tools> to instal the net-tool if is not
+
+netstat -l --program
