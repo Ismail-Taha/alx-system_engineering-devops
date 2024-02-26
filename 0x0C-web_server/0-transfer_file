@@ -4,9 +4,9 @@
 if [ $# -1t 4 ]
 
 then
-echo "Usage: O-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+	echo "Usage: O-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+	exit 1
 fi
-exit 1
 
 #paramentals to variables
 
