@@ -9,10 +9,4 @@ then
 else
 	# strict host checking
 	scp -o StrictHostKeyChecking=no -i "$4" "$1" "$3@$2":~/
-
-	if [ $? -eq 0 ]
-	then
-		echo "FILE WAS TRANSFERED SUCCESSFULLY"
-	else
-		echo "FILE TRANSFER FAILED"
 fi
